@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a6256875-d488-40d5-8dbc-ed188ac7bda9" solutionId="a6256875-d488-40d5-8dbc-ed188ac7bda9" resetWebServer="false" sharePointProductVersion="16.0" name="MusicCatalog" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f655d43f-9729-449d-bf0c-f9bf24e916b3" />
+  </features>
+</package>

@@ -1,0 +1,56 @@
+﻿<form name="artistForm" class="form-horizontal" novalidate>
+    <div class="Row">
+        <div class="col-sm-6">
+            <fieldset>
+                <legend>New Artist</legend>
+            </fieldset>
+            <div class="form-group">
+                <label for="txtName" class="col-sm-3 control-label">Artist Name</label>
+                <div class="col-sm-9" ng-class="{'has-error':artistForm.txtName.$invalid &&
+                                    artistForm.txtName.$dirty}">
+                    <input ng-model="item.name" id="txtName" name="txtName" class="form-control"
+                           placeholder="Artist Name (required)" ng-required="true"
+                           ng-minlength="4"
+                           ng-maxlength="12" />
+                    <span class="help-block has-error" ng-show="artistForm.txtName.$error.$invalid && artistForm.txtName.$dirty">
+                        <span ng-show="artistForm.txtName.$error.required">
+                            Artist Name is required.
+                        </span>
+                        <span ng-show="artistForm.txtName.$error.minlength">
+                            Artist Name must be at least 4 characters in length.
+                        </span>
+                        <span ng-show="artistForm.txtName.$error.maxlength">
+                            Artist Name cannot exceed 12 characters in length.
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txtGenre" class="col-sm-3 control-label">Genre</label>
+                <div class="col-sm-9">
+                    <select ng-model="item.genre" id="txtGenre" name="txtGenre" class="form-control" ng-required="true">
+                        <option ng-repeat="option in genres" value="{{option.genre}}">{{option.genre}}</option>
+                    </select>
+                    <span class="help-block"
+                          ng-if="artistForm.txtGenre.$error.required && artistForm.txtGenre.$dirty">Genre is required</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txtRating" class="col-sm-3 control-label">Rating</label>
+                <div class="col-sm-9" style="padding-top:10px">
+                    <span uib-rating ng-model="item.rating" max="5" class="control-label"
+                          state-on="'glyphicon-ok-sign'"
+                          state-off="'glyphicon-ok-circle'"
+                          aria-labelledby="custom-icons-1">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <button class="button btn-success" data-ng-click="addArtist()" ng-disabled="artistForm.$invalid">Save</button>
+                    <button class="button btn-warning" data-ng-click="cancel()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

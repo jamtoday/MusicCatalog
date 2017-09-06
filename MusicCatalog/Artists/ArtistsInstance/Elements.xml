@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Artists" 
+                OnQuickLaunch="TRUE" 
+                TemplateType="10001" 
+                Url="Lists/Artists" 
+                Description="Artists">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Dylan</Field>
+          <Field Name="Genre">Pop</Field>
+          <Field Name="Rating">5</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Stones</Field>
+          <Field Name="Genre">Pop</Field>
+          <Field Name="Rating">3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Beatles</Field>
+          <Field Name="Genre">Pop</Field>
+          <Field Name="Rating">4</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

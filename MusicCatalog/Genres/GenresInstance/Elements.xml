@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Genres"
+                OnQuickLaunch="TRUE"
+                TemplateType="100"
+                Url="Lists/Genres"
+                Description="List of Genres">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Pop</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Rock</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Folk</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Country</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">New Wave</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alternative</Field>
+        </Row>
+      </Rows>
+    </Data>
+  
+  </ListInstance>
+</Elements>
