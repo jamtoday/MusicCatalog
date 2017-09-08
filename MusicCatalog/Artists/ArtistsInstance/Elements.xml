@@ -22,6 +22,11 @@
           <Field Name="Genre">Pop</Field>
           <Field Name="Rating">4</Field>
         </Row>
+        <Row>
+          <Field Name="Title">Iggy Pop</Field>
+          <Field Name="Genre">Rock</Field>
+          <Field Name="Rating">5</Field>
+        </Row>
       </Rows>
     </Data>
   </ListInstance>
